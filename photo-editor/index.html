@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Play&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <title>Photo Editor</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header-title">Photo Editor</h1>
+  </header>
+  <main class="main">
+    <section class="filters">
+      <label>
+        Brightness:
+        <input name="brightness" data-sizing="%" type="range" min="0" max="200" value="100" />
+        <output name="result">100</output>
+      </label>
+      <label>
+        Saturation:
+        <input name="saturate" data-sizing="%" type="range" min="0" max="200" value="100" />
+        <output name="result">100</output>
+      </label>
+      <label>
+        Contrast:
+        <input name="contrast" data-sizing="%" type="range" min="0" max="200" value="100" />
+        <output name="result">100</output>
+      </label>
+      <label>
+        Sepia:
+        <input name="sepia" data-sizing="%" type="range" min="0" max="100" value="0" />
+        <output name="result">0</output>
+      </label>
+      <label>
+        Grayscale:
+        <input name="grayscale" data-sizing="%" type="range" min="0" max="100" value="0" />
+        <output name="result">0</output>
+      </label>
+      <label>
+        Hue-rotate:
+        <input name="hue" data-sizing="deg" type="range" min="0" max="360" value="0" />
+        <output name="result">0</output>
+      </label>
+      <label>
+        Opacity:
+        <input name="opacity" data-sizing="%" type="range" min="0" max="100" value="100" />
+        <output name="result">100</output>
+      </label>
+    </section>
+    <section class="editor">
+      <div class="button-container">
+        <button class="button-reset button ">Reset</button>
+        <button class="button-next button">Next picture</button>
+        <label class="button-load button" for="buttonInput">
+          Download picture
+          <input class="button-load-input" id="buttonInput" name="upload" type="file" placeholder="Load picture" />
+        </label>
+        <button class="button-save button">Save picture</button>
+      </div>
+      <canvas></canvas>
+      <div class="img-container">
+        <img src="assets/img/main-img.jpg" alt="image" />
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <h2 class="footer-author">
+      by Bohdan Mykhailenko
+    </h2>
+  </footer>
+  <button class="fullscreen"></button>
+  <script src="script.js"></script>
+</body>
+
+</html
