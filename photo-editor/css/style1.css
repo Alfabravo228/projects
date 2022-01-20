@@ -20,7 +20,7 @@ body {
   border-image-source: linear-gradient(to left, #0a0505, #ff9900, #0a0505);
 }
 .header-title {
-  padding: 12px 0;
+  padding: 25px 0;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #ff9900;
@@ -37,7 +37,7 @@ body {
   width: 100%;
   max-width: 1400px;
 }
-label:not(.button) {
+label:not(.btn) {
   display: block;
   position: relative;
   margin-bottom: 40px;
@@ -87,19 +87,19 @@ output {
   border-radius: 2px;
   transition: 0.3s;
 }
-.button-container {
+.btn-container {
   margin-bottom: 20px;
   padding: 2px;
   display: flex;
   justify-content: center;
 }
-.button-container > * {
+.btn-container > * {
   margin-right: 10px;
 }
-.button-container > *:last-child {
+.btn-container > *:last-child {
   margin-right: 0;
 }
-.button {
+.btn {
   flex: 1;
   min-width: 120px;
   height: 40px;
@@ -114,17 +114,17 @@ output {
   cursor: pointer;
   transition: 0.3s;
 }
-.button:hover {
+.btn:hover {
   background-color: #292726;
 }
-.button-load {
+.btn-load {
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
-.button-load-input {
+.btn-load--input {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -210,23 +210,23 @@ img {
   .main {
     padding-top: 40px;
   }
-  label:not(.button) {
+  label:not(.btn) {
     margin-bottom: 35px;
     margin-right: 80px;
   }
-  .button {
+  .btn {
     min-width: 45%;
     border-radius: 2px;
   }
-  .button-container {
+  .btn-container {
     flex-wrap: wrap;
     margin-left: -10px;
     margin-right: -10px;
   }
-  .button-container > *:last-child {
+  .btn-container > *:last-child {
     margin-right: 10px;
   }
-  .button-container > * {
+  .btn-container > * {
     margin: 10px;
   }
   .main {
@@ -250,13 +250,13 @@ img {
   }
 }
 @media (max-width: 375px) {
-  .button {
+  .btn {
     min-width: 145px;
   }
-  .button-container > *:last-child {
+  .btn-container > *:last-child {
     margin-right: 3px;
   }
-  .button-container > * {
+  .btn-container > * {
     margin: 3px;
   }
 }
